@@ -1,0 +1,85 @@
+.ms-formtoolbar{margin-bottom:7px}
+.ms-formtoolbar td{padding:0;vertical-align:top}
+.ms-delAttachments{white-space:nowrap}
+.ms-rtetoolbarmenu{background-color:#f3f3f3;color:#000;border:#c4c4c4;font-family:verdana;font-size:8pt;margin:0}
+.ms-separator{color:#c4c4c4;font-size:10pt}
+td.ms-rtetoolbarunsel{padding:3px}
+td.ms-rtetoolbarsel{padding:2px;border:solid 1px #89724f;background-image:url("/_layouts/15/images/rtebnsel.gif?rev=23");background-repeat:repeat-x}
+.ms-rtetoolbardis{filter:alpha(opacity=25);-ms-filter:"alpha(opacity=25)";opacity:.25;cursor:default}
+a.ms-rtetoolbardis{cursor:default}
+td.ms-rtetoolbarhov{padding:2px;border:solid 1px #d2b47a;background-image:url("/_layouts/15/images/rtebnhov.gif?rev=23");background-repeat:repeat-x;background-color:#fff699;cursor:pointer;color:#000}
+.ms-gridT1{text-align:left;font-size:1em;width:190px}
+.ms-gridCol{text-align:center;font-size:1em;width:90px}
+.ms-informationbar{background-color:#fff9de;border:1px solid #ffdf88}
+.ms-radiotext{cursor:default;text-align:left;height:19px}
+.ms-gridtext{cursor:default;text-align:right;height:19px}
+.ms-formbodysurvey{vertical-align:top;background:0;border-top:0;padding:5px 8px 15px 8px}
+.ms-formline{border-top:1px solid #c6c6c6;padding-right:8px;padding-left:8px}
+.ms-formdescription{color:#777}
+.ms-formrecurrence{font-weight:normal;text-align:left;vertical-align:top}
+.ms-longfileinput{width:100%}
+.ms-longer{width:100%}
+.ms-rtelong{width:100%}
+.ms-rtelonger{width:100%}
+.ms-rtefield{min-width:100%}
+.ms-rtelong,.ms-rtelonger{border:1px solid #c6c6c6}
+.ms-lookuptypeindropdown{width:20em}
+.ms-lookuptypeintextbox{width:20em;vertical-align:middle}
+.ms-attachUploadButtons{text-align:right}
+img.ms-button{cursor:pointer}
+.ms-ppCellContainerErr{border-style:dashed;border-width:1px;border-color:#bf0000}
+.ms-ppCellContainer{border-style:none}
+div.ms-inputuserfield a{color:#444;text-decoration:none;font-weight:normal;font-style:normal}
+div.ms-inputuserfield{padding-left:1px;padding-top:2px}
+.ms-dtinput,.ms-dttimeinput{vertical-align:middle;padding:0 4px 0 0}
+.ms-dttimeinput{direction:ltr}
+.ms-detailsview{border:1px solid #c6c6c6;text-align:left}
+.ms-detailsview td{padding:4px}
+.ms-long{width:100%}
+.ms-usereditor{width:100%}
+.ms-usereditorinline{width:186px}
+.clip16x16{position:relative;overflow:hidden;width:16px;height:16px}
+.clip13x13{position:relative;overflow:hidden;width:13px;height:13px}
+.clip16x16 img,.clip16x16 input,.clip13x13 img,.clip13x13 input{position:absolute}
+.ms-rtebold{top:0;left:0}
+.ms-rtecopy{top:0;left:-16px}
+.ms-rtecut{top:-16px;left:0}
+.ms-rtedrow{top:-16px;left:-16px}
+.ms-rtefntsz{top:0;left:-32px}
+.ms-rteicol{top:-16px;left:-32px}
+.ms-rteimg{top:-32px;left:0}
+.ms-rteital{top:-32px;left:-16px}
+.ms-rtelnk{top:-32px;left:-32px}
+.ms-rteltr{top:0;left:-48px}
+.ms-rtenlst{top:-16px;left:-48px}
+.ms-rtertal{top:-32px;left:-48px}
+.ms-rtescell{top:-48px;left:0}
+.ms-rtetxclr{top:-48px;left:-16px}
+.ms-rteundl{top:-48px;left:-32px}
+.ms-rteuidt{top:-48px;left:-48px}
+.ms-rtesrced{top:0;left:-64px}
+.ms-rtertl{top:-16px;left:-64px}
+.ms-rtepaste{top:-32px;left:-64px}
+.ms-rtemcell{top:-48px;left:-64px}
+.ms-rteltal{top:-64px;left:0}
+.ms-rteitbl{top:-64px;left:-16px}
+.ms-rteirow{top:-64px;left:-32px}
+.ms-rteidt{top:-64px;left:-48px}
+.ms-rteicell{top:-64px;left:-64px}
+.ms-rtefnt{top:0;left:-80px}
+.ms-rtectral{top:-16px;left:-80px}
+.ms-rteclear{top:-32px;left:-80px}
+.ms-rteblst{top:-48px;left:-80px}
+.ms-rtebkclr{top:-64px;left:-80px}
+.ms-rtednar{top:-80px;left:0}
+.ms-relateditems-core{width:350px;position:relative}
+.ms-relateditems-title{margin-left:20px}
+.ms-relateditems-item{position:relative;height:16px;overflow:none;margin-bottom:8px}
+.ms-relateditems-addurlbuttons{clear:both;float:right}
+.ms-relateditems-deletelink{position:absolute;right:0;top:0}
+.ms-relateditems-showmore-span,.ms-relateditems-showless-span{position:relative;display:inline-block;overflow:hidden;vertical-align:bottom;top:1px}
+.ms-relateditems-showmore-icon,.ms-relateditems-showless-icon{position:absolute}
+.ms-relateditems-showmore-span{height:16px;width:16px}
+.ms-relateditems-showmore-icon{left:-73px;top:-238px}
+.ms-relateditems-showless-span{height:16px;width:16px}
+.ms-relateditems-showless-icon{left:-197px;top:-138px}

@@ -1,0 +1,46 @@
+.UserShadedRegion{background-color:#f1f1f1}
+.ms-core-needIEFilter .UserShadedRegion{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c6efefef,endColorstr=#c6efefef)"}
+.UserCaption{background-color:#f1f1f1}
+.ms-core-needIEFilter .UserCaption{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c6efefef,endColorstr=#c6efefef)"}
+.RemoveConnectionLink{color:#0072c6;text-decoration:none}
+.ConnectionTabLink{color:#444;text-decoration:none}
+.ConnectionChooseActiveTab{border:solid 1px #ababab;padding:3px;display:inline;height:24px;background-color:#f1f1f1}
+.ms-core-needIEFilter .ConnectionChooseActiveTab{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c6efefef,endColorstr=#c6efefef)"}
+.ConnectionChooseInactiveTab{border-top:solid 1px #ababab;border-right:solid 1px #ababab;border-bottom:solid 1px #ababab;padding:3px;display:inline;margin-top:4px;height:20px;color:#444;background-color:#fdfdfd}
+.ms-core-needIEFilter .ConnectionChooseInactiveTab{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fffdfdfd,endColorstr=#fffdfdfd)"}
+.ConnectionConfigureInactiveTab{border-top:solid 1px #ababab;border-left:solid 1px #ababab;border-bottom:solid 1px #ababab;padding:3px;margin-top:4px;display:inline;height:20px;color:#444;background-color:#fdfdfd}
+.ms-core-needIEFilter .ConnectionConfigureInactiveTab{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fffdfdfd,endColorstr=#fffdfdfd)"}
+.ConnectionConfigureActiveTab{border:solid 1px #ababab;padding:3px;display:inline;height:24px;background-color:#f1f1f1}
+.ms-core-needIEFilter .ConnectionConfigureActiveTab{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c6efefef,endColorstr=#c6efefef)"}
+.UserConnectionTop{border-bottom:solid 1px #ababab;height:24px;width:100%}
+.UserCaptionShadow{display:none}
+.UserGenericText{color:#444}
+.ms-core-needIEFilter .UserSectionTitle{-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c6efefef,endColorstr=#c6efefef)"}
+.UserSectionHead.ms-bold{font-weight:normal}
+.UserSectionFooter{width:100%;margin-top:5px;padding-top:2px;border-top:solid 1px #c6c6c6;color:#444}
+.UserToolbar{background-image:url("/_layouts/15/images/topnavunselected.gif?rev=23");border-bottom:1px solid #6f9dd9;padding-left:2px;padding-right:2px;background-position:left bottom;background-repeat:repeat-x;background-color:transparent}
+.UserCellHover{padding:1px 4px 2px 4px;border:solid 1px #92c0e0;color:#444}
+.UserCellSelected{padding:3px 4px 0 10px;background:url("/_layouts/15/images/selbg.png?rev=23") repeat-x;background-color:#ccebff;border:solid 1px #91cdf2;color:#003759}
+.UserCell{padding:1px 4px 2px 4px;margin:1px;color:#444}
+.UserGenericBulletItem{padding-bottom:2px}
+.ms-ToolPaneFrame{padding:0;background-color:#f2f2f2}
+.ms-ToolPaneError{color:#e00000;padding:10px}
+.ms-ToolPartSpacing{display:none}
+.ms-ToolStripSelected{background-image:url("/_layouts/15/images/menubuttonhover.gif?rev=23");padding:1px 4px 2px 4px;background-color:#afd2ff;border-top:solid 1px #f2f8ff;border-bottom:solid 1px #d6e8ff;color:#000}
+.ms-ToolStrip{padding:1px 4px 2px 4px;background-image:url("/_layouts/15/images/listheadergrad.gif?rev=23");color:#000;border-top:solid 1px #f2f8ff;border-bottom:solid 1px #d6e8ff;background-color:#afd2ff}
+.ms-ConnError{color:#bf0000}
+.ms-infobar{background-color:#edf0d9;border:1px solid #999}
+.ms-consoleframe,.ms-consolestatusframe{border-bottom-width:1px;border-left-width:0;border-right-width:0;border-style:solid}
+.ms-consolestatuscell{background-image:url("/_layouts/15/images/pageTitleBKGD.gif?rev=23");background-repeat:repeat-x;background-position:top left;background-color:#d5dced;text-align:center}
+.ms-consoleframe{border-top-width:1px;border-color:#83b0ec}
+.ms-consolestatusframe{border-top-width:0;background-color:#f6fdfd;background-repeat:repeat-x;border-color:#fff}
+td.ms-consolestatuscheckoutframe{background-repeat:repeat-x}
+.ms-consolestatuscheckoutframe,.ms-consoleminiframe{background-color:#fff8b2;background:url("/_layouts/15/images/cnsugrdn.gif?rev=23")}
+.ms-consoleminiframe{height:24px;background-repeat:repeat-x}
+.ms-consolestatus{color:#666;padding-top:3px;padding-bottom:3px;text-decoration:none}
+.ms-consolestatus a{color:#3966bf}
+.ms-consolestatus a:hover{color:#3966bf;text-decoration:underline}
+.ms-consoletoolbar{text-decoration:none;color:#039}
+.ms-webpartpickeralign{padding:2px 7px 2px 3px}
+.ms-webpartpickerwarning{color:#bf0000}
+.ms-webpartPage-root{border-spacing:20px}
