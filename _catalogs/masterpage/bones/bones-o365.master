@@ -388,7 +388,7 @@
 	
 	<%-- scripts --%>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="/sites/spbones/_catalogs/masterpage/bones/script/main.js"></script>
+	<script src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/_catalogs/masterpage/bones/script/main.js%>'/>"></script>
 	
 </body>
 </SharePoint:SPHtmlTag>
