@@ -184,7 +184,6 @@ div.cbs-pictureLine3{color:#777;padding-top:8px}
 .histogram_bar_active:hover,.histogram_bar_inactive:hover{background-color:#92c0e0;border-left:1px solid #92c0e0;border-right:1px solid #92c0e0;border-top:2px solid #2a8dd4}
 .histogram_bar_active:active,.histogram_bar_inactive:active{background-color:#2a8dd4;border-left:1px solid #2a8dd4;border-right:1px solid #2a8dd4;border-top:2px solid #2a8dd4}
 .histogram_bar_background{width:28px;height:70px;display:inline}
-.ms-srch-result-groups{margin-bottom:45px}
 .ms-srch-group{clear:both;margin-top:20px}
 .ms-srch-group:first-child{clear:both;margin-top:0}
 .ms-srch-group-title{margin:2px 0 5px 0}
@@ -320,7 +319,7 @@ div.cbs-pictureLine3{color:#777;padding-top:8px}
 .ms-ref-count{margin-left:0;vertical-align:bottom;display:inline;color:#777;unicode-bidi:embed}
 .ms-ref-ellipsis,.ms-entity-resolved,.ms-entity-unresolved{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;word-wrap:normal}
 .ms-ref-divider{padding-bottom:6px}
-.ms-ref-filterSel{color:inherit}
+.ms-ref-filterSel{color:inherit;font-weight:bold}
 .ms-ref-refineritem{font-family:Tahoma;font-size:8pt;width:75%}
 .ms-searchCenter-result-main{float:left}
 .ms-searchCenter-result-main .ms-webpartzone-cell{margin-top:0;margin-bottom:2px}
@@ -438,8 +437,6 @@ a.ms-srchnav-menu-link:focus,a.ms-srchnav-menu-link:hover{outline:1px dotted tra
 .ms-core-needIEFilter a.ms-srchnav-menu-link:focus,.ms-core-needIEFilter a.ms-srchnav-menu-link:hover{background-color:transparent;-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7fcde6f7,endColorstr=#7fcde6f7)"}
 .ms-srchnav-menu-link:link,.ms-srchnav-menu-link:visited{color:#444}
 .ms-srchnav-menu-label{white-space:normal;word-wrap:break-word;word-break:break-all}
-.ms-srch-upscope-top{margin:-12px 10px 15px 0}
-.ms-srch-upscope-bottom{margin:35px 10px 45px 0}
 .ms-srch-video-playbutton{display:block;position:absolute;width:25px;height:25px;background-color:rgba(0,0,0,0.6);opacity:.7;border:2.5px solid #fff;border-radius:17px}
 .ms-core-needIEFilter .ms-srch-video-playbutton{background-color:#000;filter:alpha(opacity=70);-ms-filter:"alpha(opacity=70)"}
 .ms-srch-video-playbutton>span{display:block;border-bottom:6px solid transparent;border-left:8px solid #fff;border-top:6px solid transparent;margin:6px 0 0 10px}
