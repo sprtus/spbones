@@ -1,6 +1,6 @@
-#_atssh{display:none}
+#_atssh,#macSharePointPlugin{display:none}
 .ms-core-defaultFont{font-weight:normal;text-decoration:none;white-space:normal;word-break:normal;line-height:normal}
-body{margin:0;background-size:cover;background-repeat:no-repeat;overflow:hidden}
+body{margin:0;background-size:cover;background-repeat:no-repeat}
 html>.ms-core-needIEFilter{-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='about:blank',sizingMethod='scale');";}
 #s4-ribbonrow{position:relative;font-size:14px}
 #s4-workspace{overflow:auto;position:relative}
@@ -2024,7 +2024,7 @@ a.ms-cui-ctl-a1:hover *,a.ms-cui-ctl-large:hover *,a.ms-cui-ctl-thin:hover *,.ms
 .ms-cui-ctl-thin span{margin-top:39px}
 .ms-cui-ctl,a.ms-cui-ctl-medium{display:inline-block;white-space:nowrap;cursor:default;margin-left:1px;margin-right:1px}
 .ms-cui-strip .ms-cui-ctl,.ms-cui-strip a.ms-cui-ctl-medium{margin-left:0;margin-right:0}
-a.ms-cui-ctl,a.ms-cui-ctl-medium{height:16px;padding:1px 2px;border:1px solid transparent;cursor:default}
+a.ms-cui-ctl,a.ms-cui-ctl-medium{padding:1px 2px;border:1px solid transparent;cursor:default}
 a.ms-cui-ctl-medium{padding-left:2px;padding-right:5px}
 span.ms-cui-ctl .ms-cui-ctl-a1,span.ms-cui-ctl .ms-cui-ctl-a2{padding:0 2px 2px;border:1px solid transparent;display:block;float:left;cursor:default}
 span.ms-cui-ctl .ms-cui-ctl-a1{height:16px}
