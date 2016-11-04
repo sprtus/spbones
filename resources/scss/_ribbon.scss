@@ -1,0 +1,37 @@
+/**
+ *
+ * SharePoint ribbon and workspace styles.
+ *
+ */
+
+
+// app launcher
+#suiteBarTop .o365cs-base.o365cst .ms-bgc-tp {
+  background: $brand-primary;
+}
+
+// suite bar
+#suiteBarLeft,
+#suiteBarTop .o365cs-base.o365cst.o365spo.o365cs-topnavBGColor-2 {
+  background-color: $gray-dark;
+}
+
+// suite bar and ribbon typography
+#suiteBar,
+#s4-ribbonrow,
+#suiteBarDelta {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+}
+
+// reset text decoration on suite bar and ribbon links
+#suiteBar a,
+#s4-ribbonrow a,
+#suitebarDelta a {
+  text-decoration: none;
+}
+
+// workspace
+#s4-workspace {
+  overflow: visible;
+}

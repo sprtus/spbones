@@ -1,0 +1,246 @@
+/**
+ *
+ * SharePoint search controls and search results web part styles.
+ *
+ */
+
+// search box
+.ms-srch-sb > input,
+.ms-srch-sbLarge > input {
+  height: 50px;
+  padding-right: 62px;
+
+  &.ms-srch-sb-prompt {
+    color: $gray-light;
+  }
+
+}
+
+// search link
+.ms-srch-sb,
+.ms-srch-sbLarge {
+  position: relative;
+}
+
+// hide search nav link
+.ms-srch-sb > .ms-srch-sb-navLink {
+  display: none;
+}
+
+// replace search link image with icon font (fontawesome, etc.)
+.ms-srch-sb > .ms-srch-sb-searchLink,
+.ms-srch-sbLarge > .ms-srch-sb-searchLink {
+  color: $brand-primary;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 50px;
+
+  img {
+    display: none;
+  }
+
+  &::after {
+    content: '\ec22';
+    font-family: 'icons';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-transform: none;
+  }
+
+  &:hover {
+    background-color: $brand-primary;
+    color: $gray-superlight;
+    text-decoration: none;
+  }
+
+}
+
+// search scope tabs
+.ms-srchnav-item h2 {
+  font-size: 1.25em;
+
+  a,
+  .ms-srchnav-link:link,
+  .ms-srchnav-link:visited {
+    color: $gray-light;
+  }
+
+  .ms-srchnav-link:hover,
+  a.ms-srchnav-link-selected {
+    color: $brand-primary;
+  }
+
+}
+
+// search refiners
+.ms-ref-unsel-toggle:hover,
+.ms-ref-refiner #Value > a:hover {
+  color: $brand-primary;
+}
+
+// date refiner
+.histogram_bar_active {
+  background-color: $gray-lighter;
+  border-top-color: $brand-primary;
+}
+
+.histogram_bar_active:hover,
+.histogram_bar_active:active,
+.histogram_bar_inactive:hover,
+.histogram_bar_inactive:active {
+  background-color: $gray-lighter;
+  border-color: $brand-secondary;
+}
+
+.slider_tick_active,
+.ajax__multi_slider_default .inner_rail_horizontal {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+}
+
+.ajax__multi_slider_default .handle_forcepressed,
+.ajax__multi_slider_default .handle_noforcepressed:hover,
+.ajax__multi_slider_default .handle_noforcepressed:active {
+  background-color: $gray-lighter;
+  border-color: $brand-primary;
+}
+
+// search results
+.ms-srch-item,
+.ms-srch-people-item {
+  margin: 0 0 $line-height-computed;
+
+  .ms-srch-ellipsis {
+    font-size: 1em;
+    margin: 0;
+    text-transform: none;
+  }
+
+}
+
+.ms-srch-item:hover,
+.ms-srch-resultHover:hover,
+.edisc-SearchResultItemContainer:hover {
+  background-color: transparentize($brand-primary, .96);
+}
+
+.ms-srch-item-path {
+  color: $brand-success;
+  word-break: break-word;
+}
+
+// people results
+.ms-srch-people-item #UserInfoContainer {
+  margin-left: 100px;
+}
+
+// hover panels
+.ms-srch-hover-subTitle h3 {
+  font-size: 1em;
+}
+
+// hide results hover panel on smaller screens
+@media (max-width: $screen-md-max) {
+
+  // hide hover panel
+  .ms-srch-hover-outerContainer {
+    display: none !important;
+  }
+
+  // wrap ellipsis lines
+  .ms-srch-ellipsis {
+    white-space: normal;
+  }
+
+  // results are block elements
+  .ms-srch-item-body,
+  .ms-srch-item-path,
+  .ms-srch-item-summary {
+    display: block;
+  }
+
+  // full width results
+  .ms-srch-item,
+  .ms-srch-item-path,
+  .ms-srch-people-item,
+  .ms-srch-people-outerContainer {
+    width: auto;
+  }
+
+}
+
+// paging
+.ms-srch-result #Paging {
+  margin: $line-height-computed 0;
+
+  a {
+    color: $brand-primary;
+    display: inline-block;
+    padding: $font-size-base;
+
+    &:hover {
+      background-color: transparentize($brand-primary, .96);
+      color: $brand-primary;
+    }
+
+  }
+
+}
+
+.ms-srch-result #PagingLink a {
+  color: $gray-light;
+}
+
+// replace arrows with icon font (fontawesome, etc.)
+.ms-promlink-button {
+  border: 0;
+  font-size: 1em;
+  height: auto;
+  padding: 0;
+  width: auto;
+
+  // previous icon
+  &::after {
+    color: $gray-light;
+    content: '\ec3c';
+    font-family: 'icons';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-transform: none;
+
+    &:hover {
+      color: $brand-primary;
+    }
+
+  }
+
+  // hide image
+  .ms-promlink-button-image {
+    display: none;
+  }
+
+}
+
+// next icon
+li:first-child .ms-promlink-button::after {
+  content: '\ec3b';
+}
+
+// search tools
+.ms-srch-result #ResultFooter li {
+  padding: 0;
+
+  + li {
+    margin-left: 1em;
+  }
+
+}

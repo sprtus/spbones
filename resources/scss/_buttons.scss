@@ -1,0 +1,125 @@
+/**
+ *
+ * Button styles.
+ *
+ */
+
+// button
+.btn,
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+.ms-wpadder button,
+input.ms-button-emphasize,
+button.ms-button-emphasize,
+.ms-rteElement-ButtonRowPrimary a,
+.ms-rteElement-ButtonRowSuccess a,
+.ms-rteElement-ButtonRowInfo a,
+.ms-rteElement-ButtonRowWarning a,
+.ms-rteElement-ButtonRowDanger a {
+
+  // default button style
+  background-color: $gray-dark;
+  border: 0;
+  border-radius: $border-radius-base;
+  color: $gray-superlight;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $headings-line-height;
+  padding: $font-size-base;
+
+  // hover
+  &:hover {
+    background-color: lighten($gray-dark, 5%);
+    text-decoration: none;
+  }
+
+}
+
+// button color: primary
+.btn.btn-primary,
+.ms-rteElement-ButtonRowPrimary a {
+  background-color: $brand-primary;
+
+  &:hover {
+    background-color: lighten($brand-primary, 5%);
+  }
+}
+
+// button color: success
+.btn.btn-success,
+.ms-rteElement-ButtonRowSuccess a {
+  background-color: $brand-success;
+
+  &:hover {
+    background-color: lighten($brand-success, 5%);
+  }
+}
+
+// button color: info
+.btn.btn-info,
+.ms-rteElement-ButtonRowInfo a {
+  background-color: $brand-info;
+
+  &:hover {
+    background-color: lighten($brand-info, 5%);
+  }
+}
+
+// button color: warning
+.btn.btn-warning,
+.ms-rteElement-ButtonRowWarning a {
+  background-color: $brand-warning;
+
+  &:hover {
+    background-color: lighten($brand-warning, 5%);
+  }
+}
+
+// button color: danger
+.btn.btn-danger,
+.ms-rteElement-ButtonRowDanger a {
+  background-color: $brand-danger;
+
+  &:hover {
+    background-color: lighten($brand-danger, 5%);
+  }
+}
+
+// cancel buttons
+.btn-cancel,
+input[type=submit][value*="Cancel"],
+input[type=button][value*="Cancel"] {
+  background-color: $gray-light;
+  color: $gray-dark;
+}
+
+// disabled buttons
+.btn-disabled,
+input[type=reset][disabled],
+input[type=button][disabled],
+input[type=submit][disabled] {
+  background-color: $gray-lighter;
+  color: $gray;
+  cursor: default;
+}
+
+// small buttons
+.btn-sm,
+.ms-wpadder button,
+button.ms-buttonheightwidth,
+input[type=button][value="..."],
+.ms-core-menu-closebutton button,
+.ms-toolpanefooter input[type=submit] {
+  font-size: ceil($font-size-base * .85);
+  padding: ceil($font-size-base / 2);
+}
+
+// large buttons
+.btn-lg {
+  font-size: ceil($font-size-base * 1.125);
+  padding: ceil($font-size-base * 1.25);
+}

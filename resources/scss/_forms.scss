@@ -1,0 +1,126 @@
+/**
+ *
+ * SharePoint forms and form tables.
+ *
+ */
+
+// inputs
+textarea,
+input[type=text],
+input[type=file],
+input[type=search],
+input[type=password] {
+  background-color: $gray-lighter;
+  border-color: $gray-light;
+  border-radius: $border-radius-base;
+  color: $gray-dark;
+  height: 40px;
+  line-height: $headings-line-height;
+  padding: 0 $font-size-base;
+  width: 100%;
+}
+
+select {
+  background-color: $gray-lighter;
+  border: 1px solid $gray-light;
+  color: inherit;
+  height: 40px;
+}
+
+textarea,
+textarea.ms-long {
+  height: 5em;
+  padding: $font-size-base;
+  width: 100%;
+}
+
+// html inputs
+.ms-inputBox {
+  border: 1px solid $gray-lighter;
+  margin: 0 0 $font-size-base;
+}
+
+.ms-inputBox:hover,
+.ms-inputBoxActive,
+.ms-inputBox.ms-inputBoxActive:hover {
+  border-color: darken($gray-lighter, 10%);
+}
+
+// user fields
+.ms-usereditor {
+  width: 100%;
+}
+
+// field names
+.ms-formfieldlabelcontainer {
+  color: $gray;
+  font-size: $font-size-base;
+  margin: 1.5em 0 .5em;
+}
+
+.ms-formdescription {
+  color: $gray;
+  font-size: $font-size-base;
+}
+
+div.ms-formfieldlabelcontainer span.ms-formfieldlabel {
+  border: 0;
+  color: inherit;
+  height: auto;
+  padding: 0;
+}
+
+// field values
+table.ms-core-tableNoSpace {
+  width: 100%;
+
+  .ms-webpart-chrome > div > table {
+    width: 100%;
+  }
+
+  .ms-formtable {
+    width: 100%;
+  }
+
+}
+
+.ms-formfieldvaluecontainer {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+span[id*="_RichImageField_"] img {
+  max-width: 100%;
+}
+
+.ms-formtable {
+
+  .ms-formlabel {
+    padding: $font-size-base 0;
+  }
+
+  .ms-formbody {
+    padding: $font-size-base 0;
+
+    .ms-rtestate-field img {
+      max-width: 100%;
+    }
+
+  }
+
+  > tbody > tr + tr > td {
+    border-top: 1px solid $gray-lighter;
+  }
+
+}
+
+// form toolbar
+.ms-formtoolbar {
+  margin: 0;
+
+  > tbody > td {
+    padding: $font-size-base 0 0;
+  }
+
+}

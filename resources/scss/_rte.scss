@@ -1,0 +1,112 @@
+/**
+ *
+ * SharePoint rich text editor and page content styles.
+ *
+ */
+
+// heading 1
+h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h1 {
+  color: $headings-color;
+  font-size: $font-size-h1;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+// heading 1 (alternate)
+h1.ms-rteElement-H1B {
+  color: $brand-primary;
+}
+
+// heading 2
+h2,
+h2.ms-rteElement-H2,
+.ms-rtestate-field h2 {
+  color: $headings-color;
+  font-size: $font-size-h2;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+// heading 2 (alternate)
+h2.ms-rteElement-H2B {
+  color: $brand-primary;
+}
+
+// heading 3
+h3,
+h3.ms-rteElement-H3,
+.ms-rtestate-field h3 {
+  color: $headings-color;
+  font-size: $font-size-h3;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+// heading 3 (alternate)
+h3.ms-rteElement-H3B {
+  color: $brand-primary;
+}
+
+// heading 4
+h4,
+h4.ms-rteElement-H4,
+.ms-rtestate-field h4 {
+  color: $headings-color;
+  font-size: $font-size-h4;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+// heading 4 (alternate)
+h4.ms-rteElement-H4B {
+  color: $brand-primary;
+}
+
+// heading 5
+h5 {
+  color: $headings-color;
+  font-size: $font-size-h5;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+
+  &.ms-rteElement-H5 {
+    -ms-name: "Heading 5";
+  }
+
+}
+
+// heading 6
+h6 {
+  color: $headings-color;
+  font-size: $font-size-h6;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+
+  &.ms-rteElement-H6 {
+    -ms-name: "Heading 6";
+  }
+
+}
+
+// button rows
+p.ms-rteElement-ButtonRowPrimary {
+  -ms-name: "Button Row (Primary)";
+}
+
+p.ms-rteElement-ButtonRowSuccess {
+  -ms-name: "Button Row (Success)";
+}
+
+p.ms-rteElement-ButtonRowInfo {
+  -ms-name: "Button Row (Info)";
+}
+
+p.ms-rteElement-ButtonRowWarning {
+  -ms-name: "Button Row (Warning)";
+}
+
+p.ms-rteElement-ButtonRowDanger {
+  -ms-name: "Button Row (Danger)";
+}

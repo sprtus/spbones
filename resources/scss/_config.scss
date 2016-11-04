@@ -1,0 +1,80 @@
+/**
+ *
+ * Configuration to be used throughout all your application stylesheets. This
+ * also includes some Bootstrap UI configuration that you may change if desired.
+ *
+ */
+
+// colors: grays
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray-lighter: lighten($gray-base, 93.5%);
+$gray-superlight: #fff;
+
+// colors: brand
+$brand-primary: #106dda;
+$brand-success: #16a453;
+$brand-info: #129bdf;
+$brand-warning: #d48919;
+$brand-danger: #c1143e;
+
+// body
+$body-bg: $gray-superlight;
+$text-color: $gray-dark;
+
+// links
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// typography
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-base: $font-family-sans-serif;
+
+// font sizes
+$font-size-base: 14px;
+$font-size-large: ceil(($font-size-base * 1.25));
+$font-size-small: ceil(($font-size-base * .85));
+$font-size-h1: floor(($font-size-base * 2.6));
+$font-size-h2: floor(($font-size-base * 2.15));
+$font-size-h3: ceil(($font-size-base * 1.7));
+$font-size-h4: ceil(($font-size-base * 1.25));
+$font-size-h5: $font-size-base;
+$font-size-h6: ceil(($font-size-base * .85));
+
+// line height
+$line-height-base: 1.4;
+
+// headings
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
+// horizontal rule
+$hr-border: $gray-lighter;
+
+// border radius
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 3px;
+
+// media query breakpoints
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+// grid
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+// container widths
+$container-tablet: (720px + $grid-gutter-width);
+$container-desktop: (940px + $grid-gutter-width);
+$container-large-desktop: (1140px + $grid-gutter-width);

@@ -1,0 +1,11 @@
+linters:
+  Comment:
+    enabled: false
+  IdSelector:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  SelectorDepth:
+    enabled: false

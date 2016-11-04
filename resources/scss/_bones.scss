@@ -1,0 +1,47 @@
+/**
+ *
+ * Load configuration variables, Bootstrap styles, and core SPBones styles.
+ *
+ * Bootstrap is not loaded in its entirety. There is a high level of collision
+ * when combining the entirety of the Bootstrap UI with the SharePoint UI
+ * because they are both complex frameworks that offer many similar features. To
+ * resolve this, we import only the most important aspects of Bootstrap that we
+ * need in our application. Namely, this includes Bootstrap's scaffolding,
+ * responsive grid, and utility styles.
+ *
+ */
+
+// bootstrap variables and mixins
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+// application configuration variables
+@import 'config';
+
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// bootstrap stylesheets
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+
+/*! SPBones v2.0.0 | MIT License | https://github.com/oldrivercreative/spbones */
+
+// sharepoint resets
+@import 'collision';
+@import 'reset';
+
+// sharepoint styles
+@import 'ribbon';
+@import 'rte';
+@import 'forms';
+@import 'buttons';
+@import 'webparts';
+@import 'lists';
+@import 'search';

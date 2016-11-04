@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    "sass: resources/scss/**/*.scss > _catalogs/masterpage/bones/css",
+    "webpack: resources/js/app.js > _catalogs/masterpage/bones/js/app.js"
+  ],
+  "environments": {
+    "o365": {
+      "type": "file",
+      "src": "_catalogs/masterpage/**",
+      "dest": "/path/to/mapped/network/drive"
+    }
+  }
+}

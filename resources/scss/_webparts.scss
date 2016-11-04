@@ -1,0 +1,171 @@
+/**
+ *
+ * SharePoint web part styles.
+ *
+ */
+
+// web part vertical spacing
+.ms-webpartzone-cell {
+  margin-bottom: $line-height-computed;
+}
+
+// web part titles
+.ms-webpart-chrome-title {
+  margin-bottom: 0;
+}
+
+.js-webpart-titleCell {
+  display: block;
+}
+
+.ms-webpart-controlBox {
+  right: 0;
+  top: 0;
+}
+
+#s4-workspace h2.ms-webpart-titleText {
+  text-align: left !important;
+
+  nobr {
+    white-space: normal;
+  }
+
+}
+
+// web part zone labels
+.ms-SPZoneLabel {
+  color: $gray;
+  font-size: $font-size-base;
+  text-align: center;
+}
+
+// add web part buttons
+.ms-WPAddButton {
+  background: $gray-dark;
+  border: 0;
+  color: $gray-superlight;
+  padding: ceil($line-height-computed / 2);
+
+  a {
+    color: $gray-superlight;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-superlight;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+// web part zones
+.ms-SPZone.ms-webpart-zone,
+.ms-SPZone.ms-webpart-zone:hover {
+  border: 1px dashed $gray-light;
+  padding: 0;
+}
+
+
+.ms-SPZone > .s4-wpcell,
+.ms-SPZone > .s4-wpActive,
+.ms-rtestate-write > .ms-rte-wpbox > div > .s4-wpActive {
+  border: 0;
+  padding: 0;
+}
+
+// web part properties
+td#MSOTlPn_MainTD {
+  background: $gray-lighter;
+  bottom: 0;
+  display: block;
+  font-size: 13px;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 64px;
+  width: 275px !important;
+  z-index: 1500;
+
+  > table {
+    width: 100% !important;
+  }
+
+  .ms-ToolPaneTitle a {
+    display: none;
+  }
+
+  // inputs
+  textarea,
+  input[type=text],
+  input[type=file],
+  input[type=password] {
+    height: auto;
+    line-height: inherit;
+    width: auto;
+  }
+
+  select {
+    height: auto;
+  }
+
+  // buttons
+  button,
+  input[type=reset],
+  input[type=button],
+  input[type=submit] {
+    min-width: 3em;
+  }
+
+}
+
+// tiles
+.ms-storefront-appiconspan {
+  background-color: $brand-primary;
+}
+
+.ms-vl-apptilehover:hover {
+  background-color: transparentize($brand-primary, .9);
+}
+
+// calendars
+.ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
+  background-color: transparentize($gray-superlight, .95);
+  border-color: $gray-superlight;
+}
+
+// dialogs
+html.ms-dialog {
+
+  #s4-workspace {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  #content {
+    padding: 0;
+  }
+
+  #main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #main-container {
+    padding: 0;
+  }
+
+}
+
+// discussions
+.ms-comm-rootBestBackground {
+  background-color: $gray-light;
+  .ms-inputBox {
+    background-color: $gray-superlight;
+  }
+}

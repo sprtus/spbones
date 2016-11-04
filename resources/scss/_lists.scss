@@ -1,0 +1,43 @@
+/**
+ *
+ * SharePoint lists and libraries.
+ *
+ */
+
+// list view tables
+table.ms-listviewtable {
+  background: $gray-superlight;
+  font-size: $font-size-base;
+}
+
+// list items
+.ms-itmHoverEnabled:hover > * {
+  background-color: transparentize($brand-primary, .9);
+}
+
+.ms-itmHoverEnabled:hover .ms-list-itemLink-td {
+  background-color: transparentize($brand-primary, .8);
+}
+
+// list items: selected
+.s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell {
+  background-color: $brand-primary;
+  border-right-color: transparentize($brand-primary, .8);
+}
+
+.s4-itm-selected > *,
+.s4-itm-selected:hover > * {
+  background-color: transparentize($brand-primary, .8);
+}
+
+.s4-itm-selected .ms-list-itemLink-td,
+.s4-itm-selected:hover .ms-list-itemLink-td {
+  background-color: transparentize($brand-primary, .7);
+}
+
+// menu items: hover
+.ms-core-menu-item:hover,
+.ms-core-menu-itemSelected,
+.ms-newdoc-callout-item:hover {
+  background-color: transparentize($brand-primary, .9);
+}

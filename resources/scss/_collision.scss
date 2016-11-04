@@ -1,0 +1,33 @@
+/**
+ *
+ * Resolve issues with collision of SharePoint and Bootstrap UI styles.
+ *
+ */
+
+// reset box sizing for sharepoint elements when necessary
+#suiteBar *,
+.ms-cui-menu,
+.ms-cui-menu *,
+#s4-ribbonrow *,
+#suiteBarDelta *,
+.ms-listviewtable,
+.ms-dlgTitleBtns *,
+.ms-listviewtable *,
+.js-callout-content,
+.js-callout-content *,
+.ms-webpart-controlBox,
+.ms-webpart-controlBox *,
+.ms-InlineSearch-DivBaseline * {
+  box-sizing: content-box;
+}
+
+// smooth scrolling on touch devices
+#s4-workspace {
+  -webkit-overflow-scrolling: touch;
+}
+
+// drag and drop target
+#ms-dnd-dropbox {
+  margin-top: 85px !important;
+  position: fixed !important;
+}

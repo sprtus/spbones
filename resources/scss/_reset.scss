@@ -1,0 +1,298 @@
+/**
+ *
+ * Reset SharePoint colors, fonts, and other styles to inherit from custom
+ * stylesheets.
+ *
+ */
+
+// background-color
+.ms-srch-sbLarge,
+.ms-picker-header,
+.ms-rteStyle-Normal,
+.ms-promlink-button-enabled:hover,
+.ms-inlineSearch-searchImgSpanHoverHighlight,
+.ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
+  background-color: transparent;
+}
+
+// border
+.ms-SPZone,
+.ms-WPBorder,
+.ms-WPAddButton,
+.ms-SPZone:hover,
+.ms-srch-sb-border,
+.ms-srch-sb-navLink,
+.ms-acal-apanel-item,
+.ms-WPAddButton:hover,
+.ms-WPBorderBorderOnly,
+.ms-srch-sb-searchLink,
+.ms-srch-sb-border:hover,
+.ms-srch-sb-borderFocused,
+.ms-datepickerouter .ms-quickLaunch,
+.ms-picker-header table.ms-picker-table,
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+  border: 0;
+}
+
+// color
+.ms-vb,
+.ms-pb,
+.ms-vb2,
+.ms-vb-user,
+.ms-vb-tall,
+.ms-metadata,
+.ms-inputBox,
+.ms-ref-name,
+.ms-pb-selected,
+.ms-SPZoneLabel,
+.ms-commandLink,
+.ms-dlg-heading,
+.ms-picker-month,
+.js-callout-body,
+.ms-hashTag:link,
+.ms-sectionheader,
+h2.ms-dlg-heading,
+.ms-inputBoxActive,
+.ms-atMention:link,
+.ms-rteStyle-Quote,
+.ms-rteStyle-Byline,
+.ms-descriptiontext,
+.ms-subtleLink:link,
+.ms-hashTag:visited,
+.ms-rteStyle-Normal,
+.ms-rteStyle-Accent1,
+.ms-rteStyle-Accent2,
+.ms-core-defaultFont,
+.ms-calloutLink:link,
+.ms-rteStyle-Emphasis,
+.ms-linksection-title,
+.ms-srchnav-link:link,
+.ms-srch-resultFooter,
+.ms-srchnav-item h2 a,
+.ms-webpart-titleText,
+.ms-atMention:visited,
+.ms-subtleLink:visited,
+.ms-calloutLinkDisabled,
+.ms-rteStyle-References,
+a.ms-calloutLink:visited,
+.ms-srchnav-link:visited,
+.ms-linksectionheader h3,
+.ms-ref-refinername:link,
+.ms-rteStyle-IntenseQuote,
+.ms-list-emptyText-compact,
+.ms-acal-apanel-title span,
+.ms-ref-refinername:visited,
+.ms-srchnav-item h2 a:hover,
+.ms-rteStyle-IntenseEmphasis,
+.ms-srch-result #PagingSelf a,
+.ms-srch-result #PagingLink a,
+.ms-rteStyle-IntenseReferences,
+.ms-srch-result #Paging a:hover,
+.ms-core-listMenu-horizontalBox,
+.ms-formlabel .ms-standardheader,
+a.ms-acal-apanel-title:hover span,
+.ms-sectionheader .ms-standardheader,
+.ms-ref-ctrl .ms-ref-selSec .ms-ref-filterSel,
+.ms-InlineSearch-SearchBox-Filled.ms-InlineSearch-SearchBox-Filled {
+  color: inherit;
+}
+
+// cursor
+.ms-inlineSearch-searchImgSpanBase {
+  cursor: pointer;
+}
+
+// display
+.ms-srch-sb,
+.ms-srch-sbLarge,
+.ms-webpart-zone,
+.js-webpart-titleCell,
+.ms-webpart-cell-vertical,
+.ms-webpart-chrome-vertical,
+.ms-core-listMenu-horizontalBox {
+  display: block;
+}
+
+// float
+#SearchBox,
+.ms-srch-people-item #UserInfoContainer {
+  float: none;
+}
+
+// font-family
+.ms-metadata,
+.ms-textLarge,
+.ms-textXLarge,
+#pageStatusBar,
+.ms-dlg-heading,
+.ms-commandLink,
+.js-callout-body,
+h2.ms-dlg-heading,
+.ms-descriptiontext,
+.ms-rteStyle-Normal,
+.ms-core-defaultFont,
+.ms-calloutLink:link,
+.ms-calloutLinkDisabled,
+.ms-commandLink:visited,
+a.ms-calloutLink:visited,
+.ms-secondaryCommandLink,
+.ms-secondaryCommandLink:visited,
+.ms-webpart-titleText.ms-webpart-titleText {
+  font-family: inherit;
+}
+
+// font-size
+.headertitle,
+.headertitle a,
+.ms-sectionheader,
+.headertitle a:link,
+.ms-rteStyle-Normal,
+.ms-newdoc-callout-text,
+.ms-linksectionheader h3,
+.ms-srch-sbLarge > input,
+.ms-ref-refinername:link,
+.ms-ref-refinername:visited,
+.ms-formlabel .ms-standardheader,
+.ms-sectionheader .ms-standardheader {
+  font-size: inherit;
+}
+
+// font-weight
+.headertitle,
+.headertitle a,
+.headertitle a:link {
+  font-weight: normal;
+}
+
+// height
+.ms-srch-sb > input,
+.ms-InlineSearch-Outline-Baseline {
+  height: auto;
+}
+
+// line-height
+p.ms-rteElement-P,
+.ms-rtestate-field p {
+  line-height: inherit;
+}
+
+// margin
+.ms-srch-item,
+.level-section,
+.ms-srch-result,
+.ms-srch-item-path,
+.ms-srch-sb > input,
+#pageStatusBar[class],
+.ms-acal-apanel-outer,
+.ms-srch-result-groups,
+.ms-srch-result #Paging,
+.ms-srch-sbLarge > input,
+.ms-webpart-chrome-title,
+.ms-srch-result #ResultFooter,
+.ms-srch-people-outerContainer,
+.ms-srch-sb > .ms-srch-sb-searchLink,
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+  margin: 0;
+}
+
+// min-width
+button,
+input[type=reset],
+input[type=button],
+input[type=submit] {
+  min-width: 0;
+}
+
+// padding
+.level-header,
+.ms-srch-item,
+.ms-SPZoneLabel,
+.ms-WPAddButton,
+.ms-ref-refiner,
+#s4-bodyContainer,
+.ms-inputformheader,
+.ms-srch-people-item,
+.ms-srch-item-summary,
+.ms-inputformdescription,
+.ms-SPZone.ms-webpart-zone,
+.ms-srch-result #PagingSelf a,
+.ms-srch-result #PagingLink a,
+.ms-srch-people-outerContainer,
+.ms-srch-people-item #ContactInfo > * {
+  padding: 0;
+}
+
+// text-decoration
+.ms-core-menu-link:hover {
+  text-decoration: none;
+}
+
+// text-transform
+.ms-sectionheader,
+.ms-newdoc-callout-text,
+.ms-formlabel .ms-standardheader,
+.ms-sectionheader .ms-standardheader {
+  text-transform: none;
+}
+
+// white-space
+.ms-ref-ellipsis,
+.ms-webpart-titleText nobr,
+.ms-formlabel .ms-standardheader nobr {
+  white-space: normal;
+}
+
+// width
+#OtherValue,
+#SubmitValue,
+.histogram_container,
+.ms-ref-unsel-toggle,
+.ms-ref-refiner #Value,
+.ms-ref-refinername:link,
+.ms-ref-refinername:visited,
+.ms-srch-people-item #UserInfoContainer {
+  width: auto;
+}
+#UpScopeLinkTop {
+  width: 100% !important;
+}
+
+// accents
+.ms-accentText {
+  color: $brand-primary;
+}
+
+// subtle colors
+.ms-vh,
+.ms-ph,
+.ms-vh2,
+.ms-vh a,
+.ms-vh2 a,
+.ms-soften,
+.ms-vh-icon,
+.ms-vhImage,
+.ms-metadata,
+.ms-disabled,
+.ms-vh2-nograd,
+.ms-vh3-nograd,
+.ms-commandLink,
+.ms-soften:link,
+.ms-soften:hover,
+.ms-vh2-nofilter,
+.ms-vh-icon-empty,
+.ms-soften:active,
+.ms-descriptiontext,
+a.ms-soften:visited,
+.ms-vh2-nograd-icon,
+.ms-srch-resultscount,
+.ms-vh2-nofilter-icon,
+.ms-vh2-nofilter-perm,
+.ms-list-emptyText-compact,
+.slider_extent_label_section,
+.ms-pivotControl-surfacedOpt,
+.ms-pivotControl-overflowDot,
+.ms-vh2-nofilter-notextalign,
+.ms-pivotControl-surfacedOpt:visited,
+.ms-InlineSearch-SearchBox-EmptyUnfocused.ms-InlineSearch-SearchBox-EmptyUnfocused {
+  color: $gray;
+}
