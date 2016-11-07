@@ -23,7 +23,7 @@ SPBones in *not* intended to serve as a standalone SharePoint template. This tem
 The easiest way to get started with **SPBones** is to run the included [Gulp](http://gulpjs.com/) deployment script.
 
 1. After downloading or forking the repository, run `npm update` in the command line to download the required [NPM](https://www.npmjs.com/) modules
-2. Open `propeller.json` and change the `connection` settings to reflect the SharePoint environment to which you are deploying
+2. Open [`propeller.json`](./propeller.json) and change the `connection` settings to reflect the SharePoint environment to which you are deploying
 3. **Deploy** files to your SharePoint environment by running `gulp` in the command line
 4. **Publish** a major version of all deployed files in the browser
 3. **Apply** the master page by visiting *Site Settings*, then *Master page*, then by selecting the appropriate master page and clicking on *OK*
@@ -31,15 +31,15 @@ The easiest way to get started with **SPBones** is to run the included [Gulp](ht
   - For SharePoint 2016 or Office 365 environments, use the `bones/bones` master page
 
 ## Folder structure
-SPBones includes a `_catalogs` folder that maps to the matching location in your SharePoint environment. Any files placed into this folder will be deployed when running the deployment script. You can use this folder to deploy master pages, page layouts, design assets, image renditions, and web parts.
+SPBones includes a [`_catalogs`](./_catalogs) folder that maps to the matching location in your SharePoint environment. Any files placed into this folder will be deployed when running the deployment script. You can use this folder to deploy master pages, page layouts, design assets, image renditions, and web parts.
 
 ### Renaming your template
-We generally recommended renaming your template before deploying to SharePoint. When renaming, be sure to update all references to the `/bones` folder in your master page.
+We generally recommended renaming your template before deploying to SharePoint. When renaming, be sure to update all references to the [`/bones`](./_catalogs/masterpage/bones) folder in your master page.
 
-1. Rename the `_catalogs/masterpage/bones` folder
-2. Rename the `bones.master` file (or `bones-2013.master` if you are using SharePoint 2013)
-3. Inside your newly renamed master page file, update all references to the `bones` folder to match the new folder name you created in step #1
-4. Update the `tasks` area of the `propeller.json` file to ensure compiled files are placed in the appropriate location during deployments
+1. Rename the [`_catalogs/masterpage/bones`](./_catalogs/masterpage/bones) folder
+2. Rename the [`bones.master`](./_catalogs/masterpage/bones/bones.master) file (or [`bones-2013.master`](./_catalogs/masterpage/bones/bones-2013.master) if you are using SharePoint 2013)
+3. Inside your newly renamed master page file, update all references to the [`bones`](./_catalogs/masterpage/bones) folder to match the new folder name you created in step #1
+4. Update the `tasks` area of the [`propeller.json`](./propeller.json) file to ensure compiled files are placed in the appropriate location during deployments
 
 ## Grid system
 SPBones uses the [Bootstrap 3 responsive CSS grid system](http://getbootstrap.com/css/#grid). This is a highly configurable and flexible CSS grid system that allows you to easily build mobile-first master page and page layout templates. Read more about this grid system and see examples on the Bootstrap documentation page, [here](http://getbootstrap.com/css/#grid).
@@ -59,3 +59,6 @@ Using a combination of master pages, page layouts, and content search web parts,
 
 ## Browser support
 SPBones was written to be accessible on all browsers that the SharePoint 2013/2016/Office 365 products officially support. In general, this includes late versions of Chrome, Firefox, Safari, Android, iOS, and Internet Explorer version 8 and later.
+
+# Change History
+See all changes in [CHANGELOG.md](./CHANGELOG.md).
