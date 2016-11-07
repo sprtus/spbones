@@ -15,7 +15,7 @@ $gray-lighter: lighten($gray-base, 93.5%);
 $gray-superlight: #fff;
 
 // colors: brand
-$brand-primary: #106dda;
+$brand-primary: #1a75d4;
 $brand-success: #16a453;
 $brand-info: #129bdf;
 $brand-warning: #d48919;
@@ -59,6 +59,9 @@ $headings-color: inherit;
 // horizontal rule
 $hr-border: $gray-lighter;
 
+// forms
+$forms-input-size: 40px;
+
 // border radius
 $border-radius-base: 4px;
 $border-radius-large: 6px;
@@ -78,3 +81,6 @@ $grid-gutter-width: 30px;
 $container-tablet: (720px + $grid-gutter-width);
 $container-desktop: (940px + $grid-gutter-width);
 $container-large-desktop: (1140px + $grid-gutter-width);
+
+// font awesome
+$fa-font-path: '../fonts';

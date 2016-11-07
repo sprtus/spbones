@@ -21,7 +21,9 @@
   "homepage": "https://github.com/oldrivercreative/spbones#readme",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
-    "gulp-propeller": "^1.0.3"
+    "gulp-propeller": "^1.0.3",
+    "propeller-sharepoint": "^1.0.1"
   }
 }

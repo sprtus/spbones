@@ -5,12 +5,56 @@
  *
  */
 
+// links
+a,
+.ms-tv-item:link,
+.ms-tv-header:link,
+.ms-tv-selected:link,
+.ms-core-listMenu-item,
+.ms-core-listMenu-item:link,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link {
+  color: $link-color;
+}
+
+// links: visited
+a:visited,
+.ms-vb a:visited,
+.ms-vb2 a:visited,
+.ms-tv-item:visited,
+.ms-tv-header:visited,
+.ms-vb-user a:visited,
+.ms-core-listMenu-item:visited,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited {
+  color: $link-color;
+}
+
+// links: hover
+a:hover,
+a:focus,
+a.ms-tv-item:hover,
+a.ms-tv-header:hover,
+.ms-vb a:visited:hover,
+.ms-vb2 a:visited:hover,
+.ms-vb-user a:visited:hover,
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover {
+  color: $link-hover-color;
+  text-decoration: $link-hover-decoration;
+}
+
 // background-color
 .ms-srch-sbLarge,
 .ms-picker-header,
 .ms-rteStyle-Normal,
+.ms-core-listMenu-selected,
+.ms-core-listMenu-selected:link,
 .ms-promlink-button-enabled:hover,
+.ms-core-listMenu-selected:visited,
+li > a.ms-core-listMenu-item:hover,
+li > a.ms-core-listMenu-item:active,
 .ms-inlineSearch-searchImgSpanHoverHighlight,
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
 .ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
   background-color: transparent;
 }
@@ -30,6 +74,7 @@
 .ms-srch-sb-borderFocused,
 .ms-datepickerouter .ms-quickLaunch,
 .ms-picker-header table.ms-picker-table,
+.ms-core-listMenu-verticalBox .ms-listMenu-editLink,
 .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
   border: 0;
 }
@@ -166,6 +211,7 @@ a.ms-calloutLink:visited,
 
 // height
 .ms-srch-sb > input,
+input.ms-navedit-editButton,
 .ms-InlineSearch-Outline-Baseline {
   height: auto;
 }
@@ -174,6 +220,11 @@ a.ms-calloutLink:visited,
 p.ms-rteElement-P,
 .ms-rtestate-field p {
   line-height: inherit;
+}
+
+// list-style
+.ms-core-listMenu-root {
+  list-style: none;
 }
 
 // margin
@@ -191,7 +242,10 @@ p.ms-rteElement-P,
 .ms-srch-result #ResultFooter,
 .ms-srch-people-outerContainer,
 .ms-srch-sb > .ms-srch-sb-searchLink,
-.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+.ms-core-listMenu-verticalBox .ms-listMenu-editLink,
+.ms-core-listMenu-verticalBox li.static > .ms-core-listMenuEdit,
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item,
+.ms-core-listMenu-verticalBox li.static > .ms-navedit-titleBoxListItem {
   margin: 0;
 }
 
@@ -213,12 +267,15 @@ input[type=submit] {
 .ms-inputformheader,
 .ms-srch-people-item,
 .ms-srch-item-summary,
+.ms-navedit-appendarea,
+.ms-core-listMenu-root,
 .ms-inputformdescription,
 .ms-SPZone.ms-webpart-zone,
 .ms-srch-result #PagingSelf a,
 .ms-srch-result #PagingLink a,
 .ms-srch-people-outerContainer,
-.ms-srch-people-item #ContactInfo > * {
+.ms-srch-people-item #ContactInfo > *,
+.ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
   padding: 0;
 }
 

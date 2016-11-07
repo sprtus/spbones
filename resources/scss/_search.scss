@@ -7,8 +7,8 @@
 // search box
 .ms-srch-sb > input,
 .ms-srch-sbLarge > input {
-  height: 50px;
-  padding-right: 62px;
+  height: $forms-input-size;
+  padding-right: ceil($forms-input-size * 2) + $font-size-base;
 
   &.ms-srch-sb-prompt {
     color: $gray-light;
@@ -22,36 +22,29 @@
   position: relative;
 }
 
-// hide search nav link
-.ms-srch-sb > .ms-srch-sb-navLink {
-  display: none;
-}
-
-// replace search link image with icon font (fontawesome, etc.)
+// search button
 .ms-srch-sb > .ms-srch-sb-searchLink,
 .ms-srch-sbLarge > .ms-srch-sb-searchLink {
+  border-radius: 0 $border-radius-base $border-radius-base 0;
   color: $brand-primary;
-  font-size: 20px;
-  height: 50px;
-  line-height: 50px;
+  font-size: $font-size-large;
+  height: $forms-input-size;
+  line-height: $forms-input-size;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
-  width: 50px;
+  width: $forms-input-size;
 
+  // hide image
   img {
     display: none;
   }
 
+  // replace image with Font Awesome icon
   &::after {
-    content: '\ec22';
-    font-family: 'icons';
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    speak: none;
-    text-transform: none;
+    @include fa-icon();
+    content: $fa-var-search; // Font Awesome: 'search' icon
   }
 
   &:hover {
@@ -62,9 +55,61 @@
 
 }
 
+// search scope navigation
+.ms-srch-sb-navLink,
+.ms-srch-sb > .ms-srch-sb-navLink {
+  color: $gray-light;
+  font-size: $font-size-large;
+  height: $forms-input-size;
+  line-height: $forms-input-size;
+  position: absolute;
+  right: $forms-input-size;
+  text-align: center;
+  top: 0;
+  width: $forms-input-size;
+
+  // hide image
+  img {
+    display: none;
+  }
+
+  // replace image with Font Awesome icon
+  &::after {
+    @include fa-icon();
+    content: $fa-var-caret-down; // Font Awesome: 'caret-down' icon
+  }
+
+  &:hover,
+  &.ms-srch-sb-navLink-menuOpen {
+    background-color: transparent;
+    color: $brand-primary;
+    text-decoration: none;
+  }
+
+}
+
+// search drop-down menus
+.ms-qSuggest-container {
+  border-radius: 0 0 $border-radius-base $border-radius-base;
+  margin: 0;
+  padding: 0;
+  top: $forms-input-size;
+
+  .ms-qSuggest-listItem,
+  .ms-qSuggest-hListItem {
+    cursor: pointer;
+    padding: .5em $font-size-base;
+  }
+
+  .ms-qSuggest-hListItem {
+    background-color: transparentize($brand-primary, .95);
+  }
+
+}
+
 // search scope tabs
 .ms-srchnav-item h2 {
-  font-size: 1.25em;
+  font-size: $font-size-large;
 
   a,
   .ms-srchnav-link:link,
@@ -181,6 +226,7 @@
   margin: $line-height-computed 0;
 
   a {
+    border-radius: $border-radius-base;
     color: $brand-primary;
     display: inline-block;
     padding: $font-size-base;
@@ -198,7 +244,7 @@
   color: $gray-light;
 }
 
-// replace arrows with icon font (fontawesome, etc.)
+// replace paging arrows with Font Awesome icons
 .ms-promlink-button {
   border: 0;
   font-size: 1em;
@@ -206,33 +252,22 @@
   padding: 0;
   width: auto;
 
-  // previous icon
-  &::after {
-    color: $gray-light;
-    content: '\ec3c';
-    font-family: 'icons';
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    speak: none;
-    text-transform: none;
-
-    &:hover {
-      color: $brand-primary;
-    }
-
-  }
-
   // hide image
   .ms-promlink-button-image {
     display: none;
+  }
+
+  // replace image with Font Awesome icon
+  &::after {
+    @include fa-icon();
+    content: $fa-var-chevron-right; // Font Awesome: 'chevron-right' icon
   }
 
 }
 
 // next icon
 li:first-child .ms-promlink-button::after {
-  content: '\ec3b';
+  content: $fa-var-chevron-left; // Font Awesome: 'chevron-left' icon
 }
 
 // search tools

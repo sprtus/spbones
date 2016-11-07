@@ -1,54 +1,45 @@
 # SPBones
-Cut SharePoint's interface down to the bones with a lightweight and simplified responsive user interface template. **SPBones** is a master page template that you can copy into your SharePoint 2013 or Office 365 environment to use as a starting point from which to build your own customizations.
+Cut SharePoint's interface down to the bones with a lightweight and simplified responsive user interface template. **SPBones** is a minimal master page template that you can deploy to your SharePoint 2013, 2016, or Office 365/SharePoint Online environment to use as a starting point from which to build your design customizations.
 
+- SPBones is **modern**
+  - Ditch SharePoint Designer and code your design templates in your favorite editor on Windows or macOS
+  - Includes [ES6](https://babeljs.io/docs/learn-es2015/) script support, [SASS](http://sass-lang.com/) stylesheets, [Font Awesome](http://fontawesome.io/) iconography, and [Gulp](http://gulpjs.com/) deployments using [Propeller](https://github.com/oldrivercreative/propeller)
+  - Many default SharePoint styles have been reset to give you a "blank slate" on which to build your own customizations
 - SPBones is **responsive**
   - Includes the [Bootstrap 3 responsive CSS grid system](http://getbootstrap.com/css/#grid)
   - Includes optimizations to make SharePoint content more mobile friendly
 - SPBones is **accessible**
   - Includes semantic HTML5 markup structure
   - Includes simplified HTML for search optimization
-- SPBones is **lightweight**
-  - Includes minified versions of many default SharePoint CSS files
-  - Many default SharePoint styles have been removed to give you a "blank slate" on which to build your own customizations
 
 ## Prerequisites
-1. Requires **SharePoint 2013** (Standard or Enterprise) or **Office 365**
+1. Requires **SharePoint Server 2013/2016** (Standard or Enterprise) or **Office 365/SharePoint Online**
 2. Requires the **Design** permission level in order to copy files and apply templates
 3. We highly recommend using a **publishing** site collection
 
-SPBones in *not* intended to serve as a standalone SharePoint template. This template should be used by experienced web designers and SharePoint developers who understand the SharePoint interface customization process. This is not a SharePoint "theme," but rather a building block onto which you can craft your own theme.
+SPBones in *not* intended to serve as a standalone SharePoint template. This template should be used by web designers and SharePoint developers who understand the SharePoint interface customization process. This is not a SharePoint theme, but rather a building block onto which you can craft your own theme.
 
 ## Getting started
-The easiest way to get started with **SPBones** is to copy the template files into your SharePoint environment. You can copy these files by mapping a network drive to your SharePoint environment, or by dropping the files into the *All Files* area of your SharePoint Designer application window.
+The easiest way to get started with **SPBones** is to run the included [Gulp](http://gulpjs.com/) deployment script.
 
-1. **Copy** the `bones` folder into your SharePoint master page gallery (this should be located at `/_catalogs/masterpage/` within your site collection)
-2. **Publish** the copied files using SharePoint Designer or by browsing to the master page gallery within your web browser
+1. After downloading or forking the repository, run `npm update` in the command line to download the required [NPM](https://www.npmjs.com/) modules
+2. Open `propeller.json` and change the `connection` settings to reflect the SharePoint environment to which you are deploying
+3. **Deploy** files to your SharePoint environment by running `gulp` in the command line
+4. **Publish** a major version of all deployed files in the browser
 3. **Apply** the master page by visiting *Site Settings*, then *Master page*, then by selecting the appropriate master page and clicking on *OK*
-  - For on-premises SharePoint 2013 environments, use the `bones.master` master page
-  - For Office 365 environments, use the `bones-o365.master` master page
+  - For on-premises SharePoint 2013 environments, use the `bones/bones-2013` master page
+  - For SharePoint 2016 or Office 365 environments, use the `bones/bones` master page
 
-## Template structure
-SPBones includes a recommended folder structure for organizing your design assets, such as CSS files, JS files, and images.
-
-- `bones`
-  - `img`
-    - *Place your design-related image assets here*
-  - `script`
-    - `main.js` *Place your custom scripts into this file*
-  - `style`
-    - `core`
-      - *This folder contains minified SharePoint CSS files*
-    - `bones.css` *SPBones styles, normalize.css, bootstrap.css*
-    - `main.css` *Place your custom CSS styles into this file*
-
-You can extend this template structure to include web fonts, video, or even SharePoint Content Search web part display templates.
+## Folder structure
+SPBones includes a `_catalogs` folder that maps to the matching location in your SharePoint environment. Any files placed into this folder will be deployed when running the deployment script. You can use this folder to deploy master pages, page layouts, design assets, image renditions, and web parts.
 
 ### Renaming your template
-It's generally recommended to rename your master page after adding it to your site collection. When renaming your template, be sure to update all references within your master page to the new folder name.
+We generally recommended renaming your template before deploying to SharePoint. When renaming, be sure to update all references to the `/bones` folder in your master page.
 
-1. Rename the `bones` folder
-2. Rename the `bones.master` file (or `bones-o365.master` if you are using Office 365)
-3. Inside your newly renamed master page file, update all references to the `bones` folder to match the new folder name you created in step #1 (we recommend using *find/replace* to replace each instance of `/_catalogs/masterpage/bones/`)
+1. Rename the `_catalogs/masterpage/bones` folder
+2. Rename the `bones.master` file (or `bones-2013.master` if you are using SharePoint 2013)
+3. Inside your newly renamed master page file, update all references to the `bones` folder to match the new folder name you created in step #1
+4. Update the `tasks` area of the `propeller.json` file to ensure compiled files are placed in the appropriate location during deployments
 
 ## Grid system
 SPBones uses the [Bootstrap 3 responsive CSS grid system](http://getbootstrap.com/css/#grid). This is a highly configurable and flexible CSS grid system that allows you to easily build mobile-first master page and page layout templates. Read more about this grid system and see examples on the Bootstrap documentation page, [here](http://getbootstrap.com/css/#grid).
@@ -67,4 +58,4 @@ Some features of the SharePoint interface are more customizable than others. Whi
 Using a combination of master pages, page layouts, and content search web parts, you can build nearly anything while retaining a mobile-friendly user experience. This often means avoiding some out-of-the-box features of SharePoint, and re-creating their functionality using the elements of SharePoint that allow you to utilize HTML templates or XSL styleseheets.
 
 ## Browser support
-SPBones was written to be accessible on all browsers that the SharePoint 2013/Office 365 products officially support. In general, this includes late versions of Chrome, Firefox, Safari, Android, iOS, and Internet Explorer version 8 and later. SPBones uses a CDN-hosted version of [respond.js](https://github.com/scottjehl/Respond) and [html5shiv.js](https://github.com/aFarkas/html5shiv) to add media query and HTML5 support to IE8.
+SPBones was written to be accessible on all browsers that the SharePoint 2013/2016/Office 365 products officially support. In general, this includes late versions of Chrome, Firefox, Safari, Android, iOS, and Internet Explorer version 8 and later.

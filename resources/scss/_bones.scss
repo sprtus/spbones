@@ -25,7 +25,10 @@
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
 
-/*! SPBones v2.0.0 | MIT License | https://github.com/oldrivercreative/spbones */
+// font awesome icons
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+/*! SPBones v2.0 | MIT License | https://github.com/oldrivercreative/spbones */
 
 // sharepoint resets
 @import 'collision';

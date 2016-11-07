@@ -1,10 +1,10 @@
 <%@Master language="C#"%>
-<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
-<%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
-<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <SharePoint:SPHtmlTag dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server">
@@ -24,7 +24,7 @@
 
   <%-- icons --%>
   <SharePoint:SPPinnedSiteTile runat="server" TileUrl="/_layouts/15/images/SharePointMetroAppTile.png" TileColor="#0072C6" />
-  <SharePoint:SPShortcutIcon runat="server" IconUrl="/_layouts/15/images/favicon.ico?rev=44" />
+  <SharePoint:SPShortcutIcon runat="server" IconUrl="/_layouts/15/images/favicon.ico?rev=23" />
 
   <%-- sharepoint script and style --%>
   <SharePoint:StartScript runat="server" />
@@ -267,7 +267,7 @@
             <div class="footer-row row">
 
               <div class="col-xs-12">
-                <p>&copy; 2016 Site Title</p>
+                <p>&copy; 2016</p>
               </div>
 
             </div>
@@ -302,18 +302,6 @@
       </div>
     </div>
     <%-- /workspace --%>
-
-    <%@ Register TagPrefix="wssuc" TagName="HelpPanel" src="~/_controltemplates/15/HelpPanel.ascx" %>
-    <SharePoint:AjaxDelta id="DeltaHelpPanel" runat="server">
-      <div id = "helppanelCntdiv" class="ms-Help-PanelContainer">
-        <wssuc:HelpPanel runat="server" />
-      </div>
-    </SharePoint:AjaxDelta>
-    <SharePoint:AjaxDelta id="DeltaPageInstrumentation" runat="server">
-      <SharePoint:FlightedContent runat="server" ExpFeature="UserActivityLogging" RenderIfInFlight="true">
-        <SharePoint:PageInstrumentationControl runat="server" Id="PageInstrumentationControl" />
-      </SharePoint:FlightedContent>
-    </SharePoint:AjaxDelta>
 
   </SharePoint:SharePointForm>
   <%-- /form --%>

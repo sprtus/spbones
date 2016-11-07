@@ -4,16 +4,48 @@
  *
  */
 
-
-// app launcher
-#suiteBarTop .o365cs-base.o365cst .ms-bgc-tp {
-  background: $brand-primary;
-}
-
 // suite bar
-#suiteBarLeft,
-#suiteBarTop .o365cs-base.o365cst.o365spo.o365cs-topnavBGColor-2 {
-  background-color: $gray-dark;
+#suiteBarDelta {
+
+  // buttons
+  button {
+    border-radius: 0;
+  }
+
+  // buttons: hover
+  .ms-bgc-tdr,
+  .ms-bgc-tdr-h:hover,
+  .ms-bgc-tdr-f:focus,
+  .ms-bgColor-themeDarker,
+  .ms-bgColor-themeDarker-hover:hover,
+  .ms-bgColor-themeDarker-focus:focus {
+    background-color: $brand-primary;
+  }
+
+  // suite bar background
+  #suiteBarLeft,
+  .o365cs-base .o365cs-topnavLinkBackground-2,
+  .o365cs-base.o365cst.o365spo.o365cs-topnavBGColor-2 {
+    background-color: $gray-dark;
+  }
+
+  // app launcher
+  .o365cs-base.o365cst .ms-bgc-tp,
+  .o365cs-base .o365cs-appLauncherBackground {
+    background: $brand-primary;
+  }
+
+  // suite bar dividers
+  .o365cs-nav-header16 .o365cs-nav-pinToTop,
+  .o365cs-nav-header16 .o365cs-nav-o365Branding,
+  .o365cs-nav-header16 .o365cs-nav-rightAlign .o365cs-nav-button {
+    border-left-color: transparentize($gray-superlight, .9);
+  }
+
+  .o365cs-nav-header16 .o365cs-nav-appTitleLine {
+    background-color: transparentize($gray-superlight, .9);
+  }
+
 }
 
 // suite bar and ribbon typography
@@ -31,7 +63,12 @@
   text-decoration: none;
 }
 
-// workspace
+// page status
+#pageStatusBar[class] {
+  border: 0;
+}
+
+// hide overflow on workspace
 #s4-workspace {
   overflow: visible;
 }

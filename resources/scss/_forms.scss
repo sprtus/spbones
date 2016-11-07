@@ -14,7 +14,7 @@ input[type=password] {
   border-color: $gray-light;
   border-radius: $border-radius-base;
   color: $gray-dark;
-  height: 40px;
+  height: $forms-input-size;
   line-height: $headings-line-height;
   padding: 0 $font-size-base;
   width: 100%;
@@ -24,12 +24,12 @@ select {
   background-color: $gray-lighter;
   border: 1px solid $gray-light;
   color: inherit;
-  height: 40px;
+  height: $forms-input-size;
 }
 
 textarea,
 textarea.ms-long {
-  height: 5em;
+  height: ceil($forms-input-size * 5);
   padding: $font-size-base;
   width: 100%;
 }
