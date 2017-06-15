@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    "sass: resources/scss/**/*.scss > _catalogs/masterpage/bones/css",
+    "webpack: resources/js/app.js > _catalogs/masterpage/bones/js/app.js",
+    "copy: node_modules/font-awesome/fonts/** > _catalogs/masterpage/bones/fonts"
+  ],
+  "environments": {
+    "o365": {
+      "type": "sharepoint",
+      "src": "_catalogs/**",
+      "dest": "_catalogs",
+      "connection": {
+        "site": "https://yourtenant.sharepoint.com/sites/yoursite",
+        "user": "hello@contoso.com",
+        "pass": "yourpassword"
+      }
+    }
+  }
+}

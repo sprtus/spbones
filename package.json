@@ -1,6 +1,6 @@
 {
   "name": "spbones",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Cut SharePoint's interface down to the bones with a lightweight and simplified responsive user interface template.",
   "main": "gulpfile.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "sharepoint"
   ],
-  "author": "Kyle Schaeffer",
+  "author": "@kyleschaeffer",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/oldrivercreative/spbones/issues"
@@ -23,7 +23,7 @@
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
-    "gulp-propeller": "^1.0.3",
-    "propeller-sharepoint": "^1.0.1"
+    "gulp-propeller": "^1.2.1",
+    "propeller-sharepoint": "^1.1.0"
   }
 }

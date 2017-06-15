@@ -9,6 +9,6 @@ gulp.task('default', function(){
   propeller.extend(propellersp);
 
   // run propeller tasks
-  propeller.run().deploy('o365');
+  return propeller.run().deploy('o365');
 
 });

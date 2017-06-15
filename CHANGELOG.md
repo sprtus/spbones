@@ -1,4 +1,10 @@
-# Changelog
+# Change Log
+
+## 2.0.2
+- June 15, 2017
+- Add propeller.json to .gitignore to avoid sensitive data being checked into source control
+- Add propeller-example.json file to serve as a template for new propeller.json files
+- Update NPM dependencies
 
 ## 2.0.1
 - November 7, 2016
@@ -63,7 +69,7 @@ doesn’t recommend this approach)
 - Added on-premises master page
 
 ## 1.0.0
-- March 12, 2015: 4cbf5470bfb036ed3bea46992686c842e9607d0d
+- March 12, 2015: [4cbf547](4cbf547)
 - Version 1.0 released
 - Include support for Office 365
 - Include minisp: minified SharePoint 2013 stylesheets
