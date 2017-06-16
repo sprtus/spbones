@@ -1,6 +1,7 @@
 **/.DS_Store
 /node_modules
-/propeller.json
-/_catalogs/masterpage/bones/css
 /_catalogs/masterpage/bones/js
+/_catalogs/masterpage/bones/css
+/_catalogs/masterpage/bones/images
 /_catalogs/masterpage/bones/fonts
+/env.js
