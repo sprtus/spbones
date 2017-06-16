@@ -1,6 +1,6 @@
 {
   "name": "spbones",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Cut SharePoint's interface down to the bones with a lightweight and simplified responsive user interface template.",
   "main": "gulpfile.js",
   "scripts": {

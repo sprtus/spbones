@@ -1,5 +1,9 @@
 # Change Log
 
+## 3.0.1
+- June 16, 2017
+- Documentation tweak for clarification
+
 ## 3.0.0
 - June 16, 2017
 - Remove Gulp and Propeller

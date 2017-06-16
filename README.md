@@ -60,6 +60,7 @@ We generally recommended renaming your template before deploying to SharePoint. 
 1. Rename the [`_catalogs/masterpage/bones`](./_catalogs/masterpage/bones) folder
 2. Rename the [`bones.master`](./_catalogs/masterpage/bones/bones.master) file (or [`bones-2013.master`](./_catalogs/masterpage/bones/bones-2013.master) if you are using SharePoint 2013)
 3. Inside your newly renamed master page file, update all references to the [`bones`](./_catalogs/masterpage/bones) folder to match the new folder name you created in step #1
+4. Update any references to the `bones` folder in [webpack.config.js](./webpack.config.js)
 
 ## Grid system
 SPBones uses the [Bootstrap 3 responsive CSS grid system](http://getbootstrap.com/css/#grid). This is a highly configurable and flexible CSS grid system that allows you to easily build mobile-first master page and page layout templates. Read more about this grid system and see examples on the Bootstrap documentation page, [here](http://getbootstrap.com/css/#grid).
