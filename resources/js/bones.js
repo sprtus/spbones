@@ -1,7 +1,7 @@
 /**
  *
- * SPBones v2.0 | MIT License | https://github.com/oldrivercreative/spbones
- * 
+ * SPBones v3.0 by @kyleschaeffer | MIT License | https://github.com/oldrivercreative/spbones
+ *
  * Create an object that contains important information regarding the current
  * SharePoint site, web, page, and user. This object is especially useful when
  * building REST applications and web parts.
@@ -61,4 +61,4 @@ module.exports = {
     url: _spPageContextInfo.webAbsoluteUrl.replace(/^\/|\/$/g, ''),
   },
 
-};
+}

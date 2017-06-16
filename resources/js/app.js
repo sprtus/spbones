@@ -8,4 +8,4 @@
  */
 
 // bones
-const bones = window.bones = require('./bones');
+const bones = window.bones = require('./bones')

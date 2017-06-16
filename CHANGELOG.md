@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0
+- June 16, 2017
+- Remove Gulp and Propeller
+- Add Webpack
+- Add new deployment method using [Node](https://nodejs.org/en/) and [spsave](https://github.com/s-KaiNet/spsave)
+
 ## 2.0.2
 - June 15, 2017
 - Add propeller.json to .gitignore to avoid sensitive data being checked into source control
