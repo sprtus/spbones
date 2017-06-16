@@ -32,7 +32,7 @@ The easiest way to get started with **SPBones** is to run the included [Node](ht
   - For SharePoint 2016 or Office 365 environments, use the `bones/bones` master page
 
 ### Building
-Project builds use [Webpack](https://webpack.github.io/), allowing you to easily create module-based ES6 and Sass front-end assets that utilize [NPM](https://www.npmjs.com/) modules as needed. Edit front-end assets in the [resources](./resources) folder, and run a **build** command to build those assets in the [_catalogs](./_catalogs) folder:
+Project builds use [Webpack](https://webpack.github.io/), allowing you to easily create module-based ES6 and Sass front-end assets that utilize [NPM](https://www.npmjs.com/) modules as needed. Edit front-end assets in the [`resources`](./resources) folder, and run a **build** command to build those assets in the [`_catalogs`](./_catalogs) folder:
 ```sh
 # Build in DEVELOPMENT mode (expanded source code, source maps)
 npm run dev
@@ -44,8 +44,10 @@ npm run production
 npm run watch
 ```
 
+Edit [`webpack.config.js`](./webpack.config.js) to add new files to the build process or to change the default Webpack module configuration of the build script.
+
 ### Deploying
-You may automate the deployment of all templates and front-end assets using the included [Node](https://nodejs.org/en/) deploy script. Deployment requires that you create a new file called [`env.js`](./env-example.js) in the project directory. This file will be ignored by source control to avoid saving sensitive password information to a shared location. By default, this file is configured for an Office 365/SharePoint Online environment, but you can also configure it for many other different server configurations. See [spsave](https://github.com/s-KaiNet/spsave#credentials) and [node-sp-auth](https://github.com/s-KaiNet/node-sp-auth) documentation for more information. Once configured, run the deploy script to transfer all files within [_catalogs](./_catalogs) to the target environment. Note that the deployment script will overwrite existing files, but it *will not* delete files from the target environment (you must do this manually if you decide to rename or delete files from your solution).
+You may automate the deployment of all templates and front-end assets using the included [Node](https://nodejs.org/en/) deploy script. Deployment requires that you create a new file called [`env.js`](./env-example.js) in the project directory. This file will be ignored by source control to avoid saving sensitive password information to a shared location. By default, this file is configured for an Office 365/SharePoint Online environment, but you can also configure it for many other different server configurations. See [spsave](https://github.com/s-KaiNet/spsave#credentials) and [node-sp-auth](https://github.com/s-KaiNet/node-sp-auth) documentation for more information. Once configured, run the deploy script to transfer all files within [`_catalogs`](./_catalogs) to the target environment. Note that the deployment script will overwrite existing files, but it *will not* delete files from the target environment (you must do this manually if you decide to rename or delete files from your solution).
 ```sh
 # Deploy contents of _catalogs folder to target environment
 npm run deploy
@@ -59,8 +61,8 @@ We generally recommended renaming your template before deploying to SharePoint. 
 
 1. Rename the [`_catalogs/masterpage/bones`](./_catalogs/masterpage/bones) folder
 2. Rename the [`bones.master`](./_catalogs/masterpage/bones/bones.master) file (or [`bones-2013.master`](./_catalogs/masterpage/bones/bones-2013.master) if you are using SharePoint 2013)
-3. Inside your newly renamed master page file, update all references to the [`bones`](./_catalogs/masterpage/bones) folder to match the new folder name you created in step #1
-4. Update any references to the `bones` folder in [webpack.config.js](./webpack.config.js)
+3. Inside your newly renamed master page file, update all references to the `bones` folder to match the new folder name
+4. Update all references to the `bones` folder in [`webpack.config.js`](./webpack.config.js)
 
 ## Grid system
 SPBones uses the [Bootstrap 3 responsive CSS grid system](http://getbootstrap.com/css/#grid). This is a highly configurable and flexible CSS grid system that allows you to easily build mobile-first master page and page layout templates. Read more about this grid system and see examples on the Bootstrap documentation page, [here](http://getbootstrap.com/css/#grid).

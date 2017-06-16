@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.2
+- June 16, 2017
+- Tweak Webpack regular expression tests for better SVG font/image recognition
+- Remove url-loader dependency
+- Additional documentation and comments
+
 ## 3.0.1
 - June 16, 2017
 - Documentation tweak for clarification
