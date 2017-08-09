@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.3
+- August 9, 2017
+- Update NPM dependencies
+- Documentation tweaks
+- Remove JSHint config
+- Add ESLint config
+- Script style tweaks
+
 ## 3.0.2
 - June 16, 2017
 - Tweak Webpack regular expression tests for better SVG font/image recognition
