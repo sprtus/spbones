@@ -9,7 +9,7 @@ const config = {
   siteUrl: env.site,
   checkin: false,
   checkinType: 2,
-  checkinMessage: `Automatic deployment via SPBones`
+  checkinMessage: 'Automatic deployment via SPBones'
 }
 delete env.site
 
@@ -22,7 +22,7 @@ const files = {
 
 // deploy
 spsave(config, env, files).then(function(){
-  console.log(`Deploy to SharePoint complete`)
+  console.log('Deploy to SharePoint complete')
 }).catch(function(err){
   console.log(`Error while deploying to SharePoint: ${err}`)
 })

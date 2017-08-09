@@ -24,8 +24,8 @@
   "homepage": "https://github.com/oldrivercreative/spbones#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.2",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
     "bootstrap-sass": "^3.3.7",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
@@ -34,7 +34,7 @@
     "node-sass": "^4.5.3",
     "path": "^0.12.7",
     "sass-loader": "^6.0.6",
-    "spsave": "^3.0.2",
-    "webpack": "^2.6.1"
+    "spsave": "^3.1.0",
+    "webpack": "^2.7.0"
   }
 }

@@ -84,15 +84,15 @@ Using a combination of master pages, page layouts, and content search web parts,
 SPBones was written to be accessible on all browsers that the SharePoint 2013/2016/Office 365 products officially support. In general, this includes late versions of Chrome, Firefox, Safari, Android, iOS, and Internet Explorer version 8 and later.
 
 # Change History
-See all changes in [CHANGELOG.md](./CHANGELOG.md).
+See all changes in the [CHANGELOG](./CHANGELOG.md).
 
 ## Upgrading from 2.x
 In version 3.0, SPBones ditches Propeller and Gulp in favor of [Webpack](https://webpack.github.io/) and [Node](https://nodejs.org/en/). For this reason, some manual configuration is required to upgrade to the latest version.
 
 1. Delete `propeller.json` and `gulpfile.js`
-2. Update [.gitignore](./.gitignore) and [package.json](./package.json)
-3. Add [deploy.js](./deploy.js), [env-example.js](./env-example.js), and [webpack.config.js](./webpack.config.js)
+2. Update [`.gitignore`](./.gitignore) and [`package.json`](./package.json)
+3. Add [`deploy.js`](./deploy.js), [`env-example.js`](./env-example.js), and [`webpack.config.js`](./webpack.config.js)
 4. Run `npm update` to update all dependencies
-5. Update the Bootstrap and FontAwesome paths in [_bones.scss](./resources/scss/_bones.scss)
-6. Update `$fa-font-path` in [_config.scss](./resources/scss/_config.scss)
+5. Update the Bootstrap and FontAwesome paths in [`_bones.scss`](./resources/scss/_bones.scss)
+6. Update `$fa-font-path` in [`_config.scss`](./resources/scss/_config.scss)
 7. Follow the [Getting Started](#getting-started) instructions to configure, build, and deploy the updated solution

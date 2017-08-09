@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
 const PRODUCTION_MODE = process.env.NODE_ENV === 'production'
 
 module.exports = {
@@ -38,7 +39,7 @@ module.exports = {
     rules: [
 
       /**
-       * Compile Sass stylesheets to CSS isomg sass-loader and css-loader
+       * Compile Sass stylesheets to CSS using sass-loader and css-loader
        */
       {
         test: /\.s[ac]ss$/,
